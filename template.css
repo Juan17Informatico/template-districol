@@ -1,0 +1,249 @@
+/*================================================================================
+  VARIABLES DE COLOR Y TIPOGRAFÍA
+================================================================================*/
+:root {
+    --font-heading: "Montserrat", sans-serif;
+    --font-body: "DM Sans", sans-serif;
+
+    /* Colores base */
+    --color-texto: #454545; /* Texto principal */
+    --color-blanco: #ffffff;
+    --color-fondo: #f5f5f5; /* Fondo claro */
+    --color-gris-claro: #545454; /* Gris intermedio */
+    --color-gris-oscuro: #2b2b2b; /* Gris oscuro (footer o secciones dark) */
+    --color-amarillo: #ffcf00; /* Amarillo principal */
+}
+
+/*================================================================================
+  ESTILOS GLOBALES
+================================================================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-texto);
+    background-color: var(--color-blanco);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-texto);
+}
+
+p,
+li,
+a,
+span {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-texto);
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-amarillo);
+}
+
+/*================================================================================
+  COMPONENTES PRINCIPALES
+================================================================================*/
+.titulo-principal {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    background-color: var(--color-amarillo);
+    color: var(--color-texto);
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.boton:hover {
+    opacity: 0.9;
+}
+
+/* Secciones */
+.seccion {
+    padding: 60px 20px;
+}
+
+.seccion-blanca {
+    background-color: var(--color-blanco);
+}
+
+.seccion-gris {
+    background-color: var(--color-gris-claro);
+    color: var(--color-blanco);
+}
+
+.seccion-oscura {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco);
+}
+
+.seccion-oscura h2,
+.seccion-oscura p,
+.seccion-oscura a {
+    color: var(--color-blanco);
+}
+
+.seccion-amarilla {
+    background-color: var(--color-amarillo);
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.seccion-amarilla h2,
+.seccion-amarilla p {
+    color: var(--color-blanco);
+}
+
+/*================================================================================
+  TARJETAS Y COMPONENTES
+================================================================================*/
+.card {
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contenedor de iconos (ej. Cierre Diario, PQRS, etc.) */
+.contenedor-iconos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.icono-card {
+    text-align: center;
+    width: 150px;
+}
+
+.icono-card .icono {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--color-blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+}
+
+.icono-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.icono-card p {
+    font-size: 0.9rem;
+    color: var(--color-gris-claro);
+}
+
+/* Steps (ej. Características EMPRESA B) */
+.step-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.step-card {
+    flex: 1;
+    min-width: 200px;
+    background: var(--color-gris-claro);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 0 0 50% 50%;
+    margin: 10px;
+    position: relative;
+}
+
+.step-card .numero {
+    background: var(--color-amarillo);
+    color: var(--color-texto);
+    font-weight: 700;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.step-card h4 {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.step-card p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/*================================================================================
+  FOOTER
+================================================================================*/
+.footer {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer a {
+    color: var(--color-blanco);
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    color: var(--color-amarillo);
+}
