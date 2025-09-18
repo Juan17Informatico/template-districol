@@ -9,6 +9,16 @@ El proyecto(template) está compuesto por dos archivos principales:
 1.  `index.html`: El archivo de la página web, que muestra componentes visuales. Contiene todo el contenido, desde el encabezado hasta el pie de página. Está estructurado con etiquetas HTML5 semánticas y clases CSS descriptivas para facilitar la edición.
 2.  `template.css`: La hoja de estilos. Aquí se define el sistema de diseño completo, incluyendo la paleta de colores, la tipografía y los estilos de todos los componentes.
 
+## ¿Cómo descargar el proyecto en ZIP?
+
+Sigue estos pasos sencillos para descargar la plantilla como archivo ZIP desde GitHub:
+
+1. Ingresa al repositorio en GitHub: [https://github.com/Juan17Informatico/template-districol](https://github.com/Juan17Informatico/template-districol)
+2. Haz clic en el botón verde **Code** (Código).
+3. Selecciona la opción **Download ZIP** (Descargar ZIP).
+4. Una vez descargado el archivo, descomprímelo en la carpeta de tu preferencia.
+5. ¡Listo! Ahora puedes abrir el archivo `index.html` en tu navegador para ver la plantilla funcionando.
+
 ## Componentes y Clases Clave
 
 Esta plantilla utiliza un enfoque basado en clases para que puedas aplicar estilos predefinidos a cualquier elemento. A continuación, se detallan las clases más importantes que puedes reutilizar:
