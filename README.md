@@ -73,4 +73,4 @@ Esta animación se aplica a las clases .card, .icono-card y .step-card por defec
 
 ### Puesta en Marcha
 
-Para visualizar la plantilla en tu navegador, simplemente abre el archivo index.html en tu navegador web de preferencia (Google Chrome, Firefox, etc.) o ingresa a la página subida con github pages mediante la url: 
+Para visualizar la plantilla en tu navegador, simplemente abre el archivo index.html en tu navegador web de preferencia (Google Chrome, Firefox, etc.) o ingresa a la página subida con github pages mediante la url: https://juan17informatico.github.io/template-districol/
